@@ -4,21 +4,21 @@ from django.shortcuts import render
 
 def homepage(request):
     
-    pass
+    return render(request, 'memo_app/index.html')
 
 
 def register(request):
     
-    pass
+    return render(request, 'memo_app/register.html')
 
 
 def my_login(request):
     
-    pass
+    return render(request, 'memo_app/my-login.html')
 
 
 def dashboard(request):
     
-    pass
+    return render(request, 'memo_app/dashboard.html')
 
 
