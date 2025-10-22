@@ -56,6 +56,13 @@ def my_login(request):
     return render(request, 'memo_app/my-login.html', context)
 
 
+def user_logout(request):
+    
+    auth.logout(request)
+    
+    return redirect("")
+
+
 def dashboard(request):
     
     return render(request, 'memo_app/dashboard.html')
